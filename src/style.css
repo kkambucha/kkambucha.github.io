@@ -13,42 +13,6 @@ body {
   display: flex;
   position: relative;
 }
-#cloud1 {
-  position: absolute;
-  width: 20vw;
-  top: 5vh;
-  right: -40vw;
-}
-#cloud2 {
-  position: absolute;
-  width: 20vw;
-  top: 26vh;
-  right: -40vw;
-}
-#cloud3 {
-  position: absolute;
-  width: 10vw;
-  top: 21vh;
-  right: -20vw;
-}
-#cloud4 {
-  position: absolute;
-  width: 30vw;
-  top: 30vh;
-  right: -40vw;
-}
-#cloud5 {
-  position: absolute;
-  width: 4vw;
-  top: 15vh;
-  right: -20vw;
-}
-.cloud-background {
-  fill: #ffffff;
-}
-.cloud-shadow {
-  fill: #ecf2f7;
-}
 
 /* @media (max-height: 720px) {
   svg {

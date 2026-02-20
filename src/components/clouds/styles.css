@@ -1,0 +1,10 @@
+/* Position/size set from config in main.ts */
+.cloud {
+  position: absolute;
+}
+.cloud-background {
+  fill: #ffffff;
+}
+.cloud-shadow {
+  fill: #ecf2f7;
+}
