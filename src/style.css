@@ -8,10 +8,7 @@
 
 body {
   margin: 0;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding: 0;
   background: #b9e3f9;
   overflow: hidden;
   font-family: "Roboto", sans-serif;
@@ -88,5 +85,6 @@ body {
   }
 }
 
-@media (max-height: 720px) {
+.wrapper {
+  display: none;
 }
