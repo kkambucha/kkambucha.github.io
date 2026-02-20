@@ -25,6 +25,12 @@ body {
   transform: translateX(-50%);
 }
 
+@media (max-width: 1000px) {
+  .content {
+    width: 80vw;
+  }
+}
+
 /* @media (max-height: 720px) {
   svg {
     transform: scale(0.7);
