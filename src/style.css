@@ -83,6 +83,12 @@ body {
   margin: 0 1vw;
 }
 
+.content-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
 .contact-button {
   text-decoration: none;
   color: inherit;
@@ -100,6 +106,13 @@ body {
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
+}
+
+.trend-arrow {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .bars {
