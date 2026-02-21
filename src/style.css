@@ -47,6 +47,7 @@ body {
   height: 18vw;
   border-radius: 100%;
   border: 20px solid var(--dark-blue);
+  background-color: var(--white);
   margin: 0 auto -40px;
   max-width: 326px;
   max-height: 326px;
@@ -81,6 +82,17 @@ body {
   margin: 0 1vw;
 }
 
+.contact-button {
+  text-decoration: none;
+  color: inherit;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.contact-button:focus {
+  outline: 2px dashed var(--dark-blue);
+}
+
 @media (max-width: 1000px) {
   .content {
     width: 80vw;
@@ -91,7 +103,7 @@ body {
   }
 }
 
-@media (orientation: landscape) {
+@media screen and (max-width: 932px) and (orientation: landscape) {
   .contacts {
     right: 0;
     left: auto;
