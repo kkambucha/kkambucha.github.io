@@ -94,6 +94,14 @@ body {
   outline: 2px dashed var(--dark-blue);
 }
 
+.trend {
+  position: absolute;
+  bottom: 120px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+}
+
 .bars {
   display: flex;
   justify-content: space-around;
@@ -101,6 +109,11 @@ body {
   max-width: 500px;
   margin: 0 auto;
   gap: 10px;
+}
+
+.bar svg {
+  width: 100%;
+  height: auto;
 }
 
 @media (max-width: 1000px) {
@@ -119,6 +132,10 @@ body {
     left: auto;
     transform: none;
     flex-direction: column;
+    bottom: 0;
+  }
+
+  .trend {
     bottom: 0;
   }
 }
