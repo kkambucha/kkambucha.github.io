@@ -53,6 +53,8 @@ body {
   max-height: 326px;
   min-width: 200px;
   min-height: 200px;
+  z-index: 100;
+  position: relative;
 }
 
 .vadim {
@@ -60,6 +62,8 @@ body {
   align-items: baseline;
   justify-content: center;
   display: none;
+  z-index: 100;
+  position: relative;
 }
 
 .vadim .letter {
@@ -108,11 +112,18 @@ body {
   width: 100%;
 }
 
+.trend-wrapper {
+  position: relative;
+  height: 100%;
+  border: 1px solid blue;
+}
+
 .trend-arrow {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
+  position: relative;
+  text-align: center;
+  bottom: -194px;
+  width: 100%;
+  left: -3%;
 }
 
 .bars {
@@ -136,6 +147,11 @@ body {
 
   .mobile-scale {
     scale: 0.8;
+  }
+
+  .trend-arrow {
+    scale: 0.77;
+    bottom: -229px;
   }
 }
 
