@@ -41,6 +41,14 @@ body {
   transform: translateX(-50%);
 }
 
+.person {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -20%;
+  z-index: 100;
+}
+
 .avatar {
   display: block;
   width: 18vw;
@@ -53,17 +61,13 @@ body {
   max-height: 326px;
   min-width: 200px;
   min-height: 200px;
-  z-index: 100;
-  position: relative;
 }
 
 .vadim {
   display: flex;
   align-items: baseline;
   justify-content: center;
-  display: none;
-  z-index: 100;
-  position: relative;
+  /* display: none; */
 }
 
 .vadim .letter {
