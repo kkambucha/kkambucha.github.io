@@ -63,7 +63,7 @@ const KEYWORDS = [
   "Serverless",
 ]
 
-const container = document.querySelector("#keywords-container")
+const container = document.querySelector<HTMLElement>("#keywords-container")
 const activeTops: number[] = []
 
 function spawnWord() {
@@ -71,6 +71,8 @@ function spawnWord() {
   const el = document.createElement("div")
   el.className = "floating-word"
   el.innerText = word
+
+  if (!container) return
   container.appendChild(el)
 
   // 1. Позиционирование и кучность
