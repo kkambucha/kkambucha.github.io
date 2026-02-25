@@ -105,6 +105,7 @@ body {
 .contact {
   margin: 0 1vw;
   display: flex;
+  width: clamp(117px, 11vw, 200px);
 }
 
 .content-wrapper {
@@ -119,6 +120,7 @@ body {
   color: inherit;
   outline: none;
   -webkit-tap-highlight-color: transparent;
+  width: 100%;
 }
 
 .contact-button:focus {
