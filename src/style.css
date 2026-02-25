@@ -95,6 +95,7 @@ body {
   position: relative;
   width: 100%;
   height: 100%;
+  max-height: 732px;
 }
 
 .contact-button {
@@ -142,6 +143,57 @@ body {
 .bar svg {
   width: 100%;
   height: auto;
+}
+
+.ai {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border: 1px solid blue;
+}
+
+.ai-icon {
+  position: absolute;
+}
+
+.ai-icon-1 {
+  width: 12vw;
+  transform: rotate(-12deg);
+  top: 29vh;
+  left: 0;
+  max-width: 180px;
+}
+
+.ai-icon-2 {
+  width: 5vw;
+  transform: rotate(-16deg);
+  top: 35vh;
+  right: 9vw;
+  max-width: 200px;
+}
+
+.ai-icon-3 {
+  width: 15vw;
+  transform: rotate(16deg);
+  top: 39vh;
+  right: -5vw;
+  max-width: 220px;
+}
+
+.ai-icon-4 {
+  width: 6vw;
+  transform: rotate(25deg);
+  top: 0;
+  right: 0;
+  max-width: 250px;
+}
+
+.ai-icon-5 {
+  width: 20vw;
+  transform: rotate(-27deg);
+  top: 0;
+  left: -10vw;
+  max-width: 300px;
 }
 
 @media (max-width: 1000px) {
