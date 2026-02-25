@@ -64,6 +64,12 @@ body {
   max-height: 400px;
   min-width: 200px;
   min-height: 200px;
+  overflow: hidden;
+}
+
+.avatar-photo {
+  width: 100%;
+  height: auto;
 }
 
 .vadim {
