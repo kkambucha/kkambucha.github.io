@@ -1,5 +1,6 @@
 :root {
   --white: #ffffff;
+  --background-blue: #b9e3f9;
   --light-blue: #73b8dc;
   --light-grey: #ecf2f7;
   --blue: #96d8f9;
@@ -14,7 +15,7 @@ body {
 body {
   margin: 0;
   padding: 0;
-  background: #b9e3f9;
+  background: var(--background-blue);
   overflow: hidden;
   font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
