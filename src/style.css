@@ -215,6 +215,24 @@ body {
   left: max(-10vw, -160px);
 }
 
+.keywords {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  color: var(--light-grey);
+}
+
+.keywords-col {
+  width: 50%;
+  position: relative;
+}
+
 @media (max-width: 1000px) {
   .content {
     width: 80vw;
