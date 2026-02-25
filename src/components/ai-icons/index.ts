@@ -5,7 +5,10 @@ const ICON_SELECTOR = ".ai-icon"
 export default function initAiIcons() {
   const icons = Array.from(
     document.querySelectorAll<HTMLImageElement>(ICON_SELECTOR)
-  )
+  ).sort(
+    (a, b) =>
+      a.getBoundingClientRect().top - b.getBoundingClientRect().top
+  ) // сначала верхние, потом нижние
   if (!icons.length) return
 
   icons.forEach((icon, index) => {
@@ -14,7 +17,7 @@ export default function initAiIcons() {
     // начальное состояние
     gsap.set(icon, {
       opacity: 0,
-      y: 20,
+      y: -20,
       scale: 0.8,
     })
 
@@ -34,7 +37,7 @@ export default function initAiIcons() {
     }).to(
       icon,
       {
-        y: `-=${floatDistance}`,
+        y: `+=${floatDistance}`,
         duration: floatDuration,
         yoyo: true,
         repeat: -1,
