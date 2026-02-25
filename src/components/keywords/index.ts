@@ -89,8 +89,20 @@ function spawnWord() {
 
   activeTops.push(randomTop)
 
-  const horizontalShift = gsap.utils.random(15, 35)
-  const leftPos = isLeft ? horizontalShift : 100 - horizontalShift
+  // Горизонтальное смещение:
+  // часть слов у краёв, часть ближе к центру
+  const appearNearEdge = Math.random() > 0.5
+
+  let leftPos: number
+  if (appearNearEdge) {
+    // ближе к краям
+    leftPos = isLeft
+      ? gsap.utils.random(0, 12) // слева
+      : gsap.utils.random(88, 100) // справа
+  } else {
+    // ближе к центру
+    leftPos = gsap.utils.random(30, 70)
+  }
 
   // 2. Угол поворота
   // Левые: правый угол вверх = отрицательный rotation
@@ -143,7 +155,7 @@ function spawnWord() {
         scale: 0.8,
         duration: 1,
         ease: "power2.in",
-        onStart: () => spawnWord(), // Гарантируем 9 объектов: запускаем новый при затухании старого
+        onStart: () => spawnWord(), // Гарантируем постоянное количество объектов
       },
       "-=1"
     )

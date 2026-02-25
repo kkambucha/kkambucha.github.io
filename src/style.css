@@ -220,9 +220,9 @@ body {
 
 .keywords {
   position: absolute;
-  top: -14vh;
-  left: -15vw;
-  right: -15vw;
+  top: -10vh;
+  left: -7vw;
+  right: -7vw;
   bottom: 10vh;
   font-size: 16px;
   color: var(--light-grey);
@@ -235,6 +235,10 @@ body {
 }
 
 .keyword {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   pointer-events: none;
   will-change: transform, opacity;
 }
