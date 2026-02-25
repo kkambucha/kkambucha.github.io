@@ -9,7 +9,7 @@ export default function initAiIcons() {
   if (!icons.length) return
 
   icons.forEach((icon, index) => {
-    const baseDelay = index * 0.5
+    const baseDelay = index * 0.2
 
     // начальное состояние
     gsap.set(icon, {
@@ -40,8 +40,7 @@ export default function initAiIcons() {
         repeat: -1,
         ease: "sine.inOut",
       },
-      ">-0.3"
+      ">-0.2"
     )
   })
 }
-
