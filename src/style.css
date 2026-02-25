@@ -85,10 +85,13 @@ body {
   left: 50%;
   transform: translateX(-50%);
   align-items: center;
+  width: 100%;
+  justify-content: center;
 }
 
 .contact {
   margin: 0 1vw;
+  display: flex;
 }
 
 .content-wrapper {
@@ -107,6 +110,11 @@ body {
 
 .contact-button:focus {
   outline: 2px dashed var(--dark-blue);
+}
+
+.contact-image {
+  width: 100%;
+  height: 100%;
 }
 
 .trend {
@@ -218,6 +226,7 @@ body {
     transform: none;
     flex-direction: column;
     bottom: 0;
+    width: auto;
   }
 
   .trend {
